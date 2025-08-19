@@ -30,10 +30,10 @@ const countResult = vowelCounter(stringToCount)
 
 // Problem: 3, Palindrome
 
-function checkPalindrom (string){
+function checkPalindrom(string) {
     const isPalindrom = string.split('').reverse().join('')
 
-    if(string === isPalindrom){
+    if (string === isPalindrom) {
         return true
     }
     return false
@@ -45,7 +45,7 @@ const palindromeResult = checkPalindrom(stringToPalindrom)
 
 
 // Problem: 4, Maximum Number
-function maxNum (nums){
+function maxNum(nums) {
     // console.log(nums);
     // console.log(...nums);
     const result = Math.max(...nums)
@@ -58,11 +58,11 @@ const maximumResult = maxNum(numbers)
 
 
 // Problem: 5, Remove Duplicates
-function removeDuplicates (arrOfNums){
+function removeDuplicates(arrOfNums) {
     const removedDuplicates = []
 
-    for(const num of arrOfNums){
-        if(removedDuplicates.includes(num) === false){
+    for (const num of arrOfNums) {
+        if (removedDuplicates.includes(num) === false) {
             removedDuplicates.push(num)
         }
     }
@@ -77,10 +77,10 @@ const removeDuplicatesReslt = removeDuplicates(numbersToRemoveDuplicate)
 
 // Problem:6 Sum of All Numbers
 
-function sumNumbers(nums){
+function sumNumbers(nums) {
     let sum = 0
 
-    for(const num of nums){
+    for (const num of nums) {
         // console.log("sum",sum);
         // console.log("num",num);
         sum = sum + num
@@ -97,11 +97,11 @@ const sumResult = sumNumbers(numbersToSum)
 
 // Problem: 7, find even numbers
 
-function findEvenNumbers(allnums){
+function findEvenNumbers(allnums) {
     const evenNumbers = []
 
-    for(const num of allnums){
-        if(num % 2 === 0){
+    for (const num of allnums) {
+        if (num % 2 === 0) {
             evenNumbers.push(num)
         }
     }
@@ -109,6 +109,23 @@ function findEvenNumbers(allnums){
     return evenNumbers
 }
 
-const numbersToFindEven = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const numbersToFindEven = [1, 2, 3, 4, 5, 6, 7, 8]
 const evenNumbersResult = findEvenNumbers(numbersToFindEven)
-console.log(evenNumbersResult);
+// console.log(evenNumbersResult);
+
+
+
+// Problem: 8, Capitalize First Letter of Each Word
+function makeCapitalize(string) {
+    let words = string.split(' ')
+
+    for (let i = 0; i < words.length; i++) {
+        //    words = words[i]
+        words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+    }
+    return words.join(' ')
+}
+
+const stringToCapitalize = 'he iro nuer hferus iww sfio w f'
+const capitalizeResult = makeCapitalize(stringToCapitalize)
+console.log(capitalizeResult);
