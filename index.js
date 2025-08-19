@@ -39,6 +39,19 @@ function checkPalindrom (string){
     return false
 }
 
-const stringToPalindrom = 'racecar'
+const stringToPalindrom = 'madam'
 const palindromeResult = checkPalindrom(stringToPalindrom)
-console.log(palindromeResult);
+// console.log(palindromeResult);
+
+
+// Problem: 4, Maximum Number
+function maxNum (nums){
+    // console.log(nums);
+    // console.log(...nums);
+    const result = Math.max(...nums)
+    return result
+}
+
+const numbers = [200, 300, 400, 56045]
+const maximumResult = maxNum(numbers)
+console.log(maximumResult);
