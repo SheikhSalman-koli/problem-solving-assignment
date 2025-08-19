@@ -128,4 +128,19 @@ function makeCapitalize(string) {
 
 const stringToCapitalize = 'he iro nuer hferus iww sfio w f'
 const capitalizeResult = makeCapitalize(stringToCapitalize)
-console.log(capitalizeResult);
+// console.log(capitalizeResult);
+
+
+// Problem: 9, factorial of a number
+function factorialOfNumber(num) {
+    let result = 1
+    for (let i = 1; i <= num; i++) {
+        result *= i;
+    }
+
+    return result
+}
+
+const numberToFactorial = 5
+const factorialResult = factorialOfNumber(numberToFactorial)
+// console.log(factorialResult);
