@@ -26,3 +26,19 @@ function vowelCounter(string) {
 const stringToCount = 'salman'
 const countResult = vowelCounter(stringToCount)
 // console.log(countResult);
+
+
+// Problem: 3, Palindrome
+
+function checkPalindrom (string){
+    const isPalindrom = string.split('').reverse().join('')
+
+    if(string === isPalindrom){
+        return true
+    }
+    return false
+}
+
+const stringToPalindrom = 'racecar'
+const palindromeResult = checkPalindrom(stringToPalindrom)
+console.log(palindromeResult);
