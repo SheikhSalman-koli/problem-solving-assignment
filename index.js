@@ -1,9 +1,10 @@
 
 // Problem: 1, Reverse a String
-
-function ReverseString (a,b){
-    console.log(a+b); 
+function ReverseString (string){
+    return string.split("").reverse().join("")
 }
 
-ReverseString(6,4);
+const stringForReverse = "salman-koli"
+console.log(ReverseString(stringForReverse));
+
 
