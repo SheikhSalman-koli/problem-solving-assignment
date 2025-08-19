@@ -75,4 +75,20 @@ const removeDuplicatesReslt = removeDuplicates(numbersToRemoveDuplicate)
 
 
 
+// Problem:6 Sum of All Numbers
 
+function sumNumbers(nums){
+    let sum = 0
+
+    for(const num of nums){
+        // console.log("sum",sum);
+        // console.log("num",num);
+        sum = sum + num
+    }
+
+    return sum
+}
+
+const numbersToSum = [10, 10, 20, 80]
+const sumResult = sumNumbers(numbersToSum)
+// console.log("result",sumResult);
