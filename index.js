@@ -1,10 +1,11 @@
 
 // Problem: 1, Reverse a String
 function ReverseString(string) {
-    return string.split("").reverse().join("")
+    const reversed = string.split("").reverse().join("")
+    return reversed
 }
 
-const stringForReverse = "salman-koli"
+const stringForReverse = "salman"
 const result = ReverseString(stringForReverse)
 // console.log(result);
 
@@ -23,7 +24,7 @@ function vowelCounter(string) {
     return count
 }
 
-const stringToCount = 'salman'
+const stringToCount = 'sAlmano'
 const countResult = vowelCounter(stringToCount)
 // console.log(countResult);
 
@@ -144,3 +145,29 @@ function factorialOfNumber(num) {
 const numberToFactorial = 5
 const factorialResult = factorialOfNumber(numberToFactorial)
 // console.log(factorialResult);
+
+
+
+// Problem: 10, ping pong challenge
+function pingPong(num) {
+
+    if (num <= 20) {
+        if (num % 3 === 0 && num % 5 === 0) {
+            return ("PingPong")
+        } else if (num % 3 === 0) {
+            return ("Ping")
+        } else if (num % 5 === 0) {
+            return ("Pong")
+        } else {
+            return (num)
+        }
+    } else {
+        return ('you can just input 1-20')
+    }
+}
+
+const numberForPingPong = 15
+const pingPongResult = pingPong(numberForPingPong)
+console.log(pingPongResult);
+
+
