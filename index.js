@@ -52,6 +52,27 @@ function maxNum (nums){
     return result
 }
 
-const numbers = [200, 300, 400, 56045]
+const numbers = [281, 376, 450, 560]
 const maximumResult = maxNum(numbers)
-console.log(maximumResult);
+// console.log(maximumResult);
+
+
+// Problem: 5, Remove Duplicates
+function removeDuplicates (arrOfNums){
+    const removedDuplicates = []
+
+    for(const num of arrOfNums){
+        if(removedDuplicates.includes(num) === false){
+            removedDuplicates.push(num)
+        }
+    }
+    return removedDuplicates
+}
+
+const numbersToRemoveDuplicate = [1, 2, 2, 3, 4, 4]
+const removeDuplicatesReslt = removeDuplicates(numbersToRemoveDuplicate)
+// console.log(removeDuplicatesReslt);
+
+
+
+
