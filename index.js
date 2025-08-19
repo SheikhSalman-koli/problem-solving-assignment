@@ -92,3 +92,23 @@ function sumNumbers(nums){
 const numbersToSum = [10, 10, 20, 80]
 const sumResult = sumNumbers(numbersToSum)
 // console.log("result",sumResult);
+
+
+
+// Problem: 7, find even numbers
+
+function findEvenNumbers(allnums){
+    const evenNumbers = []
+
+    for(const num of allnums){
+        if(num % 2 === 0){
+            evenNumbers.push(num)
+        }
+    }
+
+    return evenNumbers
+}
+
+const numbersToFindEven = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const evenNumbersResult = findEvenNumbers(numbersToFindEven)
+console.log(evenNumbersResult);
